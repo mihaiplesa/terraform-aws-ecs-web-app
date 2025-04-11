@@ -869,22 +869,10 @@ variable "autoscaling_max_capacity" {
   default     = 2
 }
 
-variable "autoscaling_scale_up_adjustment" {
-  type        = number
-  description = "Scaling adjustment to make during scale up event"
-  default     = 1
-}
-
 variable "autoscaling_scale_up_cooldown" {
   type        = number
   description = "Period (in seconds) to wait between scale up events"
   default     = 60
-}
-
-variable "autoscaling_scale_down_adjustment" {
-  type        = number
-  description = "Scaling adjustment to make during scale down event"
-  default     = -1
 }
 
 variable "autoscaling_scale_down_cooldown" {

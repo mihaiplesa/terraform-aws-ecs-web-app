@@ -257,9 +257,7 @@ module "ecs_cloudwatch_autoscaling" {
   cluster_name          = var.ecs_cluster_name
   min_capacity          = var.autoscaling_min_capacity
   max_capacity          = var.autoscaling_max_capacity
-  scale_down_adjustment = var.autoscaling_scale_down_adjustment
   scale_down_cooldown   = var.autoscaling_scale_down_cooldown
-  scale_up_adjustment   = var.autoscaling_scale_up_adjustment
   scale_up_cooldown     = var.autoscaling_scale_up_cooldown
 }
 
